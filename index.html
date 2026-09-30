@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>MES系统 - 首页仪表盘</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-header">MES制造系统</div>
+    <div class="sidebar-menu">
+      <a href="index.html" class="active">仪表盘</a>
+      <a href="production.html">生产工单</a>
+      <a href="equipment.html">设备管理</a>
+      <a href="material.html">物料管理</a>
+      <a href="quality.html">品质检验</a>
+      <a href="login.html">退出登录</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="header-bar">
+      <div>生产监控仪表盘</div>
+      <div>管理员</div>
+    </div>
+    <div class="content">
+      <div class="grid-row">
+        <div class="stat-card">
+          <h4>今日工单总数</h4>
+          <div class="num">28</div>
+        </div>
+        <div class="stat-card">
+          <h4>进行中工单</h4>
+          <div class="num">12</div>
+        </div>
+        <div class="stat-card">
+          <h4>设备在线数</h4>
+          <div class="num">36</div>
+        </div>
+        <div class="stat-card">
+          <h4>良品率</h4>
+          <div class="num">96.2%</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">最近生产工单</div>
+        <table>
+          <thead>
+            <tr>
+              <th>工单号</th>
+              <th>产品名称</th>
+              <th>计划数量</th>
+              <th>完成数量</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>WO2026093001</td>
+              <td>壳体组件A</td>
+              <td>5000</td>
+              <td>3200</td>
+              <td><span class="tag-warning">生产中</span></td>
+            </tr>
+            <tr>
+              <td>WO2026093002</td>
+              <td>支架B</td>
+              <td>2000</td>
+              <td>2000</td>
+              <td><span class="tag-success">已完成</span></td>
+            </tr>
+            <tr>
+              <td>WO2026093003</td>
+              <td>盖板C</td>
+              <td>1200</td>
+              <td>0</td>
+              <td><span class="tag-danger">待开工</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

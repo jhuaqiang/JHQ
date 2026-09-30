@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>MES-物料管理</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-header">MES制造系统</div>
+    <div class="sidebar-menu">
+      <a href="index.html">仪表盘</a>
+      <a href="production.html">生产工单</a>
+      <a href="equipment.html">设备管理</a>
+      <a href="material.html" class="active">物料管理</a>
+      <a href="quality.html">品质检验</a>
+      <a href="login.html">退出登录</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="header-bar">
+      <div>物料库存</div>
+      <div>管理员</div>
+    </div>
+    <div class="content">
+      <div class="card">
+        <div class="card-title">物料库存清单</div>
+        <table>
+          <thead>
+            <tr>
+              <th>物料编码</th>
+              <th>物料名称</th>
+              <th>库存数量</th>
+              <th>单位</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MAT-001</td>
+              <td>ABS塑胶粒子</td>
+              <td>12000</td>
+              <td>KG</td>
+            </tr>
+            <tr>
+              <td>MAT-002</td>
+              <td>不锈钢垫片</td>
+              <td>55000</td>
+              <td>PCS</td>
+            </tr>
+            <tr>
+              <td>MAT-003</td>
+              <td>铝合金型材</td>
+              <td>3200</td>
+              <td>M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

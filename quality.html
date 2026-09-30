@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>MES-品质检验</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-header">MES制造系统</div>
+    <div class="sidebar-menu">
+      <a href="index.html">仪表盘</a>
+      <a href="production.html">生产工单</a>
+      <a href="equipment.html">设备管理</a>
+      <a href="material.html">物料管理</a>
+      <a href="quality.html" class="active">品质检验</a>
+      <a href="login.html">退出登录</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="header-bar">
+      <div>品质检验记录</div>
+      <div>管理员</div>
+    </div>
+    <div class="content">
+      <div class="card">
+        <div class="card-title">检验记录</div>
+        <table>
+          <thead>
+            <tr>
+              <th>检验单号</th>
+              <th>关联工单</th>
+              <th>检验数量</th>
+              <th>合格数</th>
+              <th>判定</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>QC2026093001</td>
+              <td>WO2026093001</td>
+              <td>500</td>
+              <td>482</td>
+              <td><span class="tag-success">合格</span></td>
+            </tr>
+            <tr>
+              <td>QC2026093002</td>
+              <td>WO2026093002</td>
+              <td>200</td>
+              <td>195</td>
+              <td><span class="tag-success">合格</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

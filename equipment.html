@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>MES-设备管理</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-header">MES制造系统</div>
+    <div class="sidebar-menu">
+      <a href="index.html">仪表盘</a>
+      <a href="production.html">生产工单</a>
+      <a href="equipment.html" class="active">设备管理</a>
+      <a href="material.html">物料管理</a>
+      <a href="quality.html">品质检验</a>
+      <a href="login.html">退出登录</a>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="header-bar">
+      <div>设备台账</div>
+      <div>管理员</div>
+    </div>
+    <div class="content">
+      <div class="card">
+        <div class="card-title">设备列表</div>
+        <table>
+          <thead>
+            <tr>
+              <th>设备编号</th>
+              <th>设备名称</th>
+              <th>所在产线</th>
+              <th>状态</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>EQ-001</td>
+              <td>注塑机1号</td>
+              <td>A线</td>
+              <td><span class="tag-success">运行</span></td>
+            </tr>
+            <tr>
+              <td>EQ-002</td>
+              <td>CNC加工机</td>
+              <td>B线</td>
+              <td><span class="tag-danger">维修</span></td>
+            </tr>
+            <tr>
+              <td>EQ-003</td>
+              <td>自动装配线</td>
+              <td>C线</td>
+              <td><span class="tag-success">运行</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

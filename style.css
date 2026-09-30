@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+}
+body {
+  background-color: #f1f5f9;
+  color: #333;
+}
+/* 登录页面 */
+.login-wrap {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg,#0f4c81,#165DFF);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.login-card {
+  width:380px;
+  background:#fff;
+  padding:40px 30px;
+  border-radius:10px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+.login-card h2 {
+  text-align:center;
+  color:#0f4c81;
+  margin-bottom:30px;
+}
+.form-item {
+  margin-bottom:20px;
+}
+.form-item label {
+  display:block;
+  margin-bottom:8px;
+  font-size:14px;
+}
+.form-item input {
+  width:100%;
+  height:42px;
+  padding:0 12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-size:15px;
+}
+.btn {
+  width:100%;
+  height:44px;
+  background:#165DFF;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+.btn:hover {
+  background:#0e4bdb;
+}
+
+/* 主布局 */
+.layout {
+  display:flex;
+  height:100vh;
+  overflow:hidden;
+}
+.sidebar {
+  width:220px;
+  background:#1e293b;
+  color:#fff;
+  flex-shrink:0;
+}
+.sidebar-header {
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  border-bottom:1px solid #334155;
+}
+.sidebar-menu a {
+  display:block;
+  color:#cbd5e1;
+  text-decoration:none;
+  padding:14px 24px;
+  transition:0.2s;
+}
+.sidebar-menu a:hover,.sidebar-menu a.active {
+  background:#334155;
+  color:#fff;
+}
+.main-container {
+  flex:1;
+  overflow:auto;
+}
+.header-bar {
+  height:60px;
+  background:#fff;
+  box-shadow:0 1px 3px #ddd;
+  display:flex;
+  align-items:center;
+  padding:0 24px;
+  justify-content:space-between;
+}
+.content {
+  padding:24px;
+}
+
+/* 卡片、表格 */
+.card {
+  background:#fff;
+  border-radius:8px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+.card-title {
+  font-size:16px;
+  font-weight:bold;
+  margin-bottom:16px;
+}
+.grid-row {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:16px;
+  margin-bottom:20px;
+}
+.stat-card {
+  background:#fff;
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+.stat-card h4 {
+  color:#666;
+  font-size:14px;
+  font-weight:normal;
+}
+.stat-card .num {
+  font-size:28px;
+  font-weight:bold;
+  margin-top:8px;
+  color:#165DFF;
+}
+table {
+  width:100%;
+  border-collapse: collapse;
+}
+th,td {
+  border:1px solid #e2e8f0;
+  padding:12px;
+  text-align:left;
+}
+th {
+  background:#f8fafc;
+}
+.tag-success {
+  color:#00b42a;
+}
+.tag-warning {
+  color:#ff7d00;
+}
+.tag-danger {
+  color:#f53f3f;
+}
